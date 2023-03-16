@@ -1,7 +1,7 @@
 {
   "name": "advice-generator-app",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,17 +9,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.3",
+    "@tanstack/react-query": "^4.26.1",
+    "framer-motion": "^10.3.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.0.5"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^18.15.3",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
