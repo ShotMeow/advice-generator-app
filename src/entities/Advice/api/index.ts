@@ -5,8 +5,8 @@ export const fetchAdvice = () => {
   return useQuery<AdviceAPIType>({
     queryKey: ["AdviceQuery"],
     queryFn: () =>
-      fetch("https://api.adviceslip.com/advice").then((response) =>
-        response.json()
-      ),
+      fetch("https://api.adviceslip.com/advice", {
+        cache: "no-cache",
+      }).then((response) => response.json()),
   });
 };

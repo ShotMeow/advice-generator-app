@@ -16,17 +16,19 @@ export const AdviceCard: FC = () => {
 
   return (
     <motion.article
-      className="bg-gray-700 rounded-2xl p-16 flex flex-col items-center gap-8 relative shadow-2xl"
+      className="bg-gray-700 rounded-2xl py-16 px-8 sm:px-16 flex flex-col justify-between items-center gap-8 relative shadow-2xl mx-4"
       style={{ width: "100%", maxWidth: "600px" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      <h1 className="text-green-300 tracking-widest uppercase">
-        Advice #{data?.slip.id}
-      </h1>
-      <blockquote className="text-2xl font-bold text-white text-center tracking-wide">
-        “{data?.slip.advice}”
-      </blockquote>
+      <div className="flex flex-col items-center gap-8">
+        <h1 className="text-green-300 tracking-widest uppercase">
+          Advice #{data?.slip.id}
+        </h1>
+        <blockquote className="text-2xl font-bold text-white text-center tracking-wide">
+          “{data?.slip.advice}”
+        </blockquote>
+      </div>
       <div className="flex items-center gap-4 w-full">
         <div className="w-full bg-white/20" style={{ height: "1px" }} />
         <span className="shrink-0 text-white">
